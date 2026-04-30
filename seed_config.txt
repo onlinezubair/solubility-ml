@@ -1,0 +1,25 @@
+# Global Random Seed Configuration
+# ===================================
+# This file documents the random seed used throughout the project.
+# Do NOT change this value after Week 2 splits are locked.
+
+RANDOM_SEED = 42
+
+# Usage in Python:
+#   import numpy as np
+#   import random
+#   np.random.seed(42)
+#   random.seed(42)
+
+# Usage in scikit-learn models:
+#   RandomForestRegressor(random_state=42)
+#   train_test_split(..., random_state=42)
+
+# Usage in XGBoost:
+#   XGBRegressor(seed=42)
+
+# Usage in Optuna:
+#   optuna.samplers.TPESampler(seed=42)
+
+# Reproducibility check: all metrics should match within ±0.05 RMSE
+# when pipeline is re-run from scratch on the same machine.
